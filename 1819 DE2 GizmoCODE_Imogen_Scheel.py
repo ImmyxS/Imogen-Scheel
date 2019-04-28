@@ -222,7 +222,7 @@ def Flights(destination_country, departure_country, ShortCodes):                
         departure_SCode = ShortCodes[departure_country]                             #calling the cities short code from the dictionary of short codes to use in the URL
         destination_SCode = ShortCodes[destination_country]
         chrome_path = '/home/pi/directory/opt/chromium.exe'
-        skyscanner_url = "https://www.skyscanner.net/transport/flights \
+        skyscanner_url = "https://www.skyscanner.net/transport/flights \            #red highlighted sections are to be ignored
         /{0}/{1}/{2}/?adults=1&children=&adultsv2=1&childrenv2=0&infants \
         =1&cabinclass=economy&rtn=0&preferdirects=false&outboundaltsenabled= \
         false&inboundaltsenabled=false&ref=home#results" \
@@ -316,7 +316,7 @@ Main()
 
 
 '''
-REFERANCES:
+REFERENCES:
     
 Matrix keypad  -> https://www.raspberrypi.org/forums/viewtopic.php?t=211657  
 Multiplexing   -> https://www.instructables.com/id/RaspberryPi-Multiple-Buttons-On-One-Digital-Pin/
